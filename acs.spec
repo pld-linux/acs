@@ -6,6 +6,7 @@ Release:	1
 License:	GPL
 Group:		Applications/Engineering
 Source0:	ftp://metalab.unc.edu/pub/Linux/apps/circuits/%{name}-%{version}.tar.gz
+# Source0-md5:	9766530081d270d4e5bc1760c382f675
 Patch0:		%{name}-opt.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
