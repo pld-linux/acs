@@ -32,7 +32,7 @@ pakiecie.
 %patch0 -p1
 
 %build
-OPT_FLAGS="%{?debug:-O0 -g}%{!?debug:$RPM_OPT_FLAGS}"; export OPT_FLAGS
+OPT_FLAGS="%{rpmcflags}"; export OPT_FLAGS
 cd src
 %{__make} linux
 
