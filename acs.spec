@@ -2,11 +2,14 @@ Summary:	Spice-like analog simulator
 Summary(pl):	Symulator uk³adów analogowych typu Spice
 Name:		acs
 Version:	0.28
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/Engineering
 Group(de):	Applikationen/Ingenieurwesen
+Group(es):	Aplicaciones/Ingeniería
+Group(fr):	Applications/Ingénierie
 Group(pl):	Aplikacje/In¿ynierskie
+Group(pt):	Aplicações/Engenharia
 Source0:	ftp://metalab.unc.edu/pub/Linux/apps/circuits/%{name}-%{version}.tar.gz
 Patch0:		%{name}-opt.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
