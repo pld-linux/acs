@@ -46,6 +46,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc man/man doc/{acs-tutorial,whatisit,history,relnotes.28}
+%doc man/man doc/{acs-tutorial,whatisit,history,relnotes.028}
 %attr(755,root,root) %{_bindir}/*
 %{_examplesdir}/%{name}-%{version}
