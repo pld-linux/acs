@@ -1,0 +1,72 @@
+diff -urN acs-0.28.org/modelgen/Make2.Trace acs-0.28/modelgen/Make2.Trace
+--- acs-0.28.org/modelgen/Make2.Trace	Wed Mar  7 23:25:15 2001
++++ acs-0.28/modelgen/Make2.Trace	Wed Mar  7 23:26:33 2001
+@@ -5,7 +5,7 @@
+ 
+ CCC = g++
+ CCFLAGS = \
+--DUNIX -O3 -DDO_TRACE -DNDEBUG -fno-exceptions \
++-DUNIX $(OPT_FLAGS) -DDO_TRACE -DNDEBUG -fno-exceptions \
+ -Wall -W -Wno-sign-compare \
+ -Wundef -Wpointer-arith -Wbad-function-cast -Wcast-qual \
+ -Wcast-align -Wwrite-strings -Wconversion \
+diff -urN acs-0.28.org/modelgen/Make2.g++ acs-0.28/modelgen/Make2.g++
+--- acs-0.28.org/modelgen/Make2.g++	Wed Mar  7 23:25:15 2001
++++ acs-0.28/modelgen/Make2.g++	Wed Mar  7 23:26:12 2001
+@@ -5,7 +5,7 @@
+ 
+ CCC = g++
+ CCFLAGS = \
+--DUNIX -O3 -DNDEBUG -I.. -fno-exceptions \
++-DUNIX $(OPT_FLAGS) -DNDEBUG -I.. -fno-exceptions \
+ -Wall -W -Wno-sign-compare \
+ -Wundef -Wpointer-arith -Wbad-function-cast -Wcast-qual \
+ -Wwrite-strings -Wconversion \
+diff -urN acs-0.28.org/modelgen/Make2.sun-CC acs-0.28/modelgen/Make2.sun-CC
+--- acs-0.28.org/modelgen/Make2.sun-CC	Wed Mar  7 23:25:15 2001
++++ acs-0.28/modelgen/Make2.sun-CC	Wed Mar  7 23:26:22 2001
+@@ -4,7 +4,7 @@
+ 
+ # Use g++ if you have it for a speed advantage of about 20%
+ CCC = CC
+-CCFLAGS = -DNDEBUG -DUNIX -O4
++CCFLAGS = -DNDEBUG -DUNIX $(OPT_FLAGS)
+ LIBS = -lm
+ LDFLAGS =
+ 
+diff -urN acs-0.28.org/src/Make2.Trace acs-0.28/src/Make2.Trace
+--- acs-0.28.org/src/Make2.Trace	Wed Mar  7 23:25:15 2001
++++ acs-0.28/src/Make2.Trace	Wed Mar  7 23:26:33 2001
+@@ -5,7 +5,7 @@
+ 
+ CCC = g++
+ CCFLAGS = \
+--DUNIX -O3 -DDO_TRACE -DNDEBUG -fno-exceptions \
++-DUNIX $(OPT_FLAGS) -DDO_TRACE -DNDEBUG -fno-exceptions \
+ -Wall -W -Wno-sign-compare \
+ -Wundef -Wpointer-arith -Wbad-function-cast -Wcast-qual \
+ -Wcast-align -Wwrite-strings -Wconversion \
+diff -urN acs-0.28.org/src/Make2.g++ acs-0.28/src/Make2.g++
+--- acs-0.28.org/src/Make2.g++	Wed Mar  7 23:25:15 2001
++++ acs-0.28/src/Make2.g++	Wed Mar  7 23:26:12 2001
+@@ -5,7 +5,7 @@
+ 
+ CCC = g++
+ CCFLAGS = \
+--DUNIX -O3 -DNDEBUG -I.. -fno-exceptions \
++-DUNIX $(OPT_FLAGS) -DNDEBUG -I.. -fno-exceptions \
+ -Wall -W -Wno-sign-compare \
+ -Wundef -Wpointer-arith -Wbad-function-cast -Wcast-qual \
+ -Wwrite-strings -Wconversion \
+diff -urN acs-0.28.org/src/Make2.sun-CC acs-0.28/src/Make2.sun-CC
+--- acs-0.28.org/src/Make2.sun-CC	Wed Mar  7 23:25:15 2001
++++ acs-0.28/src/Make2.sun-CC	Wed Mar  7 23:26:22 2001
+@@ -4,7 +4,7 @@
+ 
+ # Use g++ if you have it for a speed advantage of about 20%
+ CCC = CC
+-CCFLAGS = -DNDEBUG -DUNIX -O4
++CCFLAGS = -DNDEBUG -DUNIX $(OPT_FLAGS)
+ LIBS = -lm
+ LDFLAGS =
+ 
