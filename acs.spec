@@ -1,8 +1,8 @@
 Summary:	Spice-like analog simulator
 Summary(pl):	Symulator uk³adów analogowych typu Spice
 Name:		acs
-Version:	0.28
-Release:	3
+Version:	0.29
+Release:	1
 License:	GPL
 Group:		Applications/Engineering
 Source0:	ftp://metalab.unc.edu/pub/Linux/apps/circuits/%{name}-%{version}.tar.gz
@@ -46,6 +46,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc man/man doc/{acs-tutorial,whatisit,history,relnotes.028}
+%doc man/man doc/{acs-tutorial,whatisit,history,relnotes.029}
 %attr(755,root,root) %{_bindir}/*
 %{_examplesdir}/%{name}-%{version}
