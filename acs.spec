@@ -38,10 +38,10 @@ cd src
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_examplesdir}/%{name}-%{verson}}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_examplesdir}/%{name}-%{version}}
 
 install src/LINUX/acs	$RPM_BUILD_ROOT%{_bindir}/
-install examples/*	$RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{verson}
+install examples/*	$RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 gzip -9nf doc/*
 
@@ -52,4 +52,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc man/man doc/*.gz
 %attr(755,root,root) %{_bindir}/*
-%{_examplesdir}/%{name}-%{verson}
+%{_examplesdir}/%{name}-%{version}
