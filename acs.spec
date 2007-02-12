@@ -1,5 +1,5 @@
 Summary:	Spice-like analog simulator
-Summary(pl.UTF-8):   Symulator układów analogowych typu Spice
+Summary(pl.UTF-8):	Symulator układów analogowych typu Spice
 Name:		acs
 Version:	0.29
 Release:	1
