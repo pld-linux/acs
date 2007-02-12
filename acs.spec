@@ -1,5 +1,5 @@
 Summary:	Spice-like analog simulator
-Summary(pl):	Symulator uk≥adÛw analogowych typu Spice
+Summary(pl.UTF-8):   Symulator uk≈Çad√≥w analogowych typu Spice
 Name:		acs
 Version:	0.29
 Release:	1
@@ -18,12 +18,12 @@ can also be run in batch mode or as a server. The output is produced
 as it simulates. Spice compatible models for the MOSFET (level
 1,2,3,6) and diode are included in this release.
 
-%description -l pl
-ACS jest symulatorem obwodÛw elektronicznych. Umoøliwia on analizy:
-nieliniow± dc, analizy przej∂ciowe, analizy fouriera oraz analizy ac
-zlinearyzowane w czasie operacji. Symulator jest w pe≥ni interaktywny
-ale moøe byÊ uruchamiany w trybie batch lub serwer. Modele MOSFET
-(poziom 1,2,3,6) oraz diod kompatybilne ze Spice s± zawarte w
+%description -l pl.UTF-8
+ACS jest symulatorem obwod√≥w elektronicznych. Umo≈ºliwia on analizy:
+nieliniowƒÖ dc, analizy przej≈õciowe, analizy fouriera oraz analizy ac
+zlinearyzowane w czasie operacji. Symulator jest w pe≈Çni interaktywny
+ale mo≈ºe byƒá uruchamiany w trybie batch lub serwer. Modele MOSFET
+(poziom 1,2,3,6) oraz diod kompatybilne ze Spice sƒÖ zawarte w
 pakiecie.
 
 %prep
